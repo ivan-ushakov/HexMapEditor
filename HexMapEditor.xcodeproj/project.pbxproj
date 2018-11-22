@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C4E9BB821A6CACD007A61A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4E9BB721A6CACD007A61A9 /* AppDelegate.swift */; };
+		2C4E9BBA21A6CACD007A61A9 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4E9BB921A6CACD007A61A9 /* GameViewController.swift */; };
+		2C4E9BBC21A6CACD007A61A9 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C4E9BBB21A6CACD007A61A9 /* art.scnassets */; };
+		2C4E9BBE21A6CACE007A61A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C4E9BBD21A6CACE007A61A9 /* Assets.xcassets */; };
+		2C4E9BC121A6CACE007A61A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C4E9BBF21A6CACE007A61A9 /* Main.storyboard */; };
+		2C4E9BCD21A6CACE007A61A9 /* HexMapEditorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4E9BCC21A6CACE007A61A9 /* HexMapEditorTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2C4E9BC921A6CACE007A61A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C4E9BAC21A6CACD007A61A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C4E9BB321A6CACD007A61A9;
+			remoteInfo = HexMapEditor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2C4E9BB421A6CACD007A61A9 /* HexMapEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HexMapEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C4E9BB721A6CACD007A61A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2C4E9BB921A6CACD007A61A9 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		2C4E9BBB21A6CACD007A61A9 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		2C4E9BBD21A6CACE007A61A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C4E9BC021A6CACE007A61A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2C4E9BC221A6CACE007A61A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C4E9BC321A6CACE007A61A9 /* HexMapEditor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HexMapEditor.entitlements; sourceTree = "<group>"; };
+		2C4E9BC821A6CACE007A61A9 /* HexMapEditorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HexMapEditorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C4E9BCC21A6CACE007A61A9 /* HexMapEditorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexMapEditorTests.swift; sourceTree = "<group>"; };
+		2C4E9BCE21A6CACE007A61A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C4E9BB121A6CACD007A61A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C4E9BC521A6CACE007A61A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C4E9BAB21A6CACD007A61A9 = {
+			isa = PBXGroup;
+			children = (
+				2C4E9BB621A6CACD007A61A9 /* HexMapEditor */,
+				2C4E9BCB21A6CACE007A61A9 /* HexMapEditorTests */,
+				2C4E9BB521A6CACD007A61A9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2C4E9BB521A6CACD007A61A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C4E9BB421A6CACD007A61A9 /* HexMapEditor.app */,
+				2C4E9BC821A6CACE007A61A9 /* HexMapEditorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C4E9BB621A6CACD007A61A9 /* HexMapEditor */ = {
+			isa = PBXGroup;
+			children = (
+				2C4E9BB721A6CACD007A61A9 /* AppDelegate.swift */,
+				2C4E9BB921A6CACD007A61A9 /* GameViewController.swift */,
+				2C4E9BBB21A6CACD007A61A9 /* art.scnassets */,
+				2C4E9BBD21A6CACE007A61A9 /* Assets.xcassets */,
+				2C4E9BBF21A6CACE007A61A9 /* Main.storyboard */,
+				2C4E9BC221A6CACE007A61A9 /* Info.plist */,
+				2C4E9BC321A6CACE007A61A9 /* HexMapEditor.entitlements */,
+			);
+			path = HexMapEditor;
+			sourceTree = "<group>";
+		};
+		2C4E9BCB21A6CACE007A61A9 /* HexMapEditorTests */ = {
+			isa = PBXGroup;
+			children = (
+				2C4E9BCC21A6CACE007A61A9 /* HexMapEditorTests.swift */,
+				2C4E9BCE21A6CACE007A61A9 /* Info.plist */,
+			);
+			path = HexMapEditorTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C4E9BB321A6CACD007A61A9 /* HexMapEditor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C4E9BD121A6CACE007A61A9 /* Build configuration list for PBXNativeTarget "HexMapEditor" */;
+			buildPhases = (
+				2C4E9BB021A6CACD007A61A9 /* Sources */,
+				2C4E9BB121A6CACD007A61A9 /* Frameworks */,
+				2C4E9BB221A6CACD007A61A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HexMapEditor;
+			productName = HexMapEditor;
+			productReference = 2C4E9BB421A6CACD007A61A9 /* HexMapEditor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2C4E9BC721A6CACE007A61A9 /* HexMapEditorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C4E9BD421A6CACE007A61A9 /* Build configuration list for PBXNativeTarget "HexMapEditorTests" */;
+			buildPhases = (
+				2C4E9BC421A6CACE007A61A9 /* Sources */,
+				2C4E9BC521A6CACE007A61A9 /* Frameworks */,
+				2C4E9BC621A6CACE007A61A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C4E9BCA21A6CACE007A61A9 /* PBXTargetDependency */,
+			);
+			name = HexMapEditorTests;
+			productName = HexMapEditorTests;
+			productReference = 2C4E9BC821A6CACE007A61A9 /* HexMapEditorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C4E9BAC21A6CACD007A61A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = " Ivan Ushakov";
+				TargetAttributes = {
+					2C4E9BB321A6CACD007A61A9 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					2C4E9BC721A6CACE007A61A9 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 2C4E9BB321A6CACD007A61A9;
+					};
+				};
+			};
+			buildConfigurationList = 2C4E9BAF21A6CACD007A61A9 /* Build configuration list for PBXProject "HexMapEditor" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2C4E9BAB21A6CACD007A61A9;
+			productRefGroup = 2C4E9BB521A6CACD007A61A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C4E9BB321A6CACD007A61A9 /* HexMapEditor */,
+				2C4E9BC721A6CACE007A61A9 /* HexMapEditorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C4E9BB221A6CACD007A61A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C4E9BC121A6CACE007A61A9 /* Main.storyboard in Resources */,
+				2C4E9BBE21A6CACE007A61A9 /* Assets.xcassets in Resources */,
+				2C4E9BBC21A6CACD007A61A9 /* art.scnassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C4E9BC621A6CACE007A61A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C4E9BB021A6CACD007A61A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C4E9BBA21A6CACD007A61A9 /* GameViewController.swift in Sources */,
+				2C4E9BB821A6CACD007A61A9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C4E9BC421A6CACE007A61A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C4E9BCD21A6CACE007A61A9 /* HexMapEditorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2C4E9BCA21A6CACE007A61A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C4E9BB321A6CACD007A61A9 /* HexMapEditor */;
+			targetProxy = 2C4E9BC921A6CACE007A61A9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2C4E9BBF21A6CACE007A61A9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C4E9BC021A6CACE007A61A9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C4E9BCF21A6CACE007A61A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2C4E9BD021A6CACE007A61A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		2C4E9BD221A6CACE007A61A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HexMapEditor/HexMapEditor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = G38VA7FQQ2;
+				INFOPLIST_FILE = HexMapEditor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lunarkey.HexMapEditor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		2C4E9BD321A6CACE007A61A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HexMapEditor/HexMapEditor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = G38VA7FQQ2;
+				INFOPLIST_FILE = HexMapEditor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lunarkey.HexMapEditor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		2C4E9BD521A6CACE007A61A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = G38VA7FQQ2;
+				INFOPLIST_FILE = HexMapEditorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lunarkey.HexMapEditorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HexMapEditor.app/Contents/MacOS/HexMapEditor";
+			};
+			name = Debug;
+		};
+		2C4E9BD621A6CACE007A61A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = G38VA7FQQ2;
+				INFOPLIST_FILE = HexMapEditorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lunarkey.HexMapEditorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HexMapEditor.app/Contents/MacOS/HexMapEditor";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C4E9BAF21A6CACD007A61A9 /* Build configuration list for PBXProject "HexMapEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C4E9BCF21A6CACE007A61A9 /* Debug */,
+				2C4E9BD021A6CACE007A61A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C4E9BD121A6CACE007A61A9 /* Build configuration list for PBXNativeTarget "HexMapEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C4E9BD221A6CACE007A61A9 /* Debug */,
+				2C4E9BD321A6CACE007A61A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C4E9BD421A6CACE007A61A9 /* Build configuration list for PBXNativeTarget "HexMapEditorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C4E9BD521A6CACE007A61A9 /* Debug */,
+				2C4E9BD621A6CACE007A61A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C4E9BAC21A6CACD007A61A9 /* Project object */;
+}
