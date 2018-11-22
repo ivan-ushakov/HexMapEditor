@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="12047" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13151"/>
-        <plugIn identifier="com.apple.SceneKitIBPlugin" version="13151"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <plugIn identifier="com.apple.SceneKitIBPlugin" version="14460.31"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -675,7 +676,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="HexMapEditor" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -695,25 +696,71 @@
                         </connections>
                     </window>
                     <connections>
-                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
+                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="gGp-qO-yAg"/>
                     </connections>
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="250"/>
+            <point key="canvasLocation" x="672" y="84"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="GameViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <sceneView key="view" loops="NO" preferredRenderingAPI="-1" id="RvT-eo-GD2">
+                <viewController id="XfG-lQ-9wD" customClass="GameViewController" customModule="HexMapEditor" customModuleProvider="target" sceneMemberID="viewController">
+                    <customView key="view" id="QiL-lO-oqb">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                    </sceneView>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <subviews>
+                            <scrollView wantsLayer="YES" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJG-A2-6FH">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="300"/>
+                                <clipView key="contentView" drawsBackground="NO" id="Svj-he-9f1">
+                                    <rect key="frame" x="1" y="1" width="98" height="298"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <collectionView id="aUg-mn-uIA">
+                                            <rect key="frame" x="0.0" y="0.0" width="98" height="158"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                            <collectionViewFlowLayout key="collectionViewLayout" minimumInteritemSpacing="10" minimumLineSpacing="10" id="cFZ-bg-Z8N">
+                                                <size key="itemSize" width="50" height="50"/>
+                                            </collectionViewFlowLayout>
+                                            <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </collectionView>
+                                    </subviews>
+                                </clipView>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="pOs-YH-lE9"/>
+                                </constraints>
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="AS9-va-cnS">
+                                    <rect key="frame" x="1" y="283" width="98" height="16"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="Lc0-Zb-S0R">
+                                    <rect key="frame" x="234" y="1" width="15" height="143"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                            <sceneView preferredRenderingAPI="1" translatesAutoresizingMaskIntoConstraints="NO" id="u6w-Qb-A0f">
+                                <rect key="frame" x="104" y="0.0" width="346" height="300"/>
+                            </sceneView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="uJG-A2-6FH" firstAttribute="leading" secondItem="QiL-lO-oqb" secondAttribute="leading" id="1Aa-Qe-0XG"/>
+                            <constraint firstAttribute="trailing" secondItem="u6w-Qb-A0f" secondAttribute="trailing" id="2x1-JD-Biz"/>
+                            <constraint firstAttribute="bottom" secondItem="u6w-Qb-A0f" secondAttribute="bottom" id="FAV-mq-7L6"/>
+                            <constraint firstItem="u6w-Qb-A0f" firstAttribute="top" secondItem="QiL-lO-oqb" secondAttribute="top" id="NcW-vC-psg"/>
+                            <constraint firstItem="u6w-Qb-A0f" firstAttribute="leading" secondItem="Svj-he-9f1" secondAttribute="trailing" constant="5" id="Qzk-RB-urS"/>
+                            <constraint firstAttribute="bottom" secondItem="uJG-A2-6FH" secondAttribute="bottom" id="YiP-eg-Ahe"/>
+                            <constraint firstItem="uJG-A2-6FH" firstAttribute="top" secondItem="QiL-lO-oqb" secondAttribute="top" id="uLW-gx-vTo"/>
+                        </constraints>
+                    </customView>
+                    <connections>
+                        <outlet property="collectionView" destination="aUg-mn-uIA" id="aus-1V-cku"/>
+                        <outlet property="sceneView" destination="u6w-Qb-A0f" id="U1I-Lf-zul"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="817"/>
+            <point key="canvasLocation" x="672" y="658"/>
         </scene>
     </scenes>
 </document>
